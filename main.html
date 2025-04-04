@@ -2,14 +2,54 @@
 
 <html>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block vs Inline Elements</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <div class="container">
+        <p data-ns-test="paragraph">This is a paragraph.</p>
+        <p data-ns-test="paragraph">This is a paragraph.</p>
+        <p>Answer: Block</p>
+    </div>
+
+    <div class="container">
+        <span data-ns-test="span">This is a span.</span>
+        <span data-ns-test="span">This is a span.</span>
+        <p>Answer: Inline</p>
+    </div>
+
+    <div class="container">
+        <div data-ns-test="div">This is a div.</div>
+        <div data-ns-test="div">This is a div.</div>
+        <p>Answer: Block</p>
+    </div>
+
+    <div class="container">
+        <strong data-ns-test="strong">This is strong.</strong>
+        <strong data-ns-test="strong">This is strong.</strong>
+        <p>Answer: Inline</p>
+    </div>
+
+    <div class="container">
+        <em data-ns-test="em">This is emphasized text.</em>
+        <em data-ns-test="em">This is emphasized text.</em>
+        <p>Answer: Inline</p>
+    </div>
+
+    <div class="container">
+        <h1 data-ns-test="heading">This is a heading.</h1>
+        <h1 data-ns-test="heading">This is a heading.</h1>
+        <p>Answer: Block</p>
+    </div>
 
 </body>
 
