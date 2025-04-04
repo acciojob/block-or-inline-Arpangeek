@@ -16,38 +16,37 @@
 <body>
 
     <div class="container">
-        <p data-ns-test="paragraph">This is a paragraph.</p>
-        <p data-ns-test="paragraph">This is a paragraph.</p>
+        <p data-ns-test="block-inline-p">This is a paragraph.</p>
         <p>Answer: Block</p>
     </div>
 
     <div class="container">
-        <span data-ns-test="span">This is a span.</span>
-        <span data-ns-test="span">This is a span.</span>
+        <span data-ns-test="block-inline-span">This is a span.</span>
         <p>Answer: Inline</p>
     </div>
 
     <div class="container">
-        <div data-ns-test="div">This is a div.</div>
-        <div data-ns-test="div">This is a div.</div>
+        <div data-ns-test="block-inline-div">This is a div.</div>
         <p>Answer: Block</p>
     </div>
 
     <div class="container">
-        <strong data-ns-test="strong">This is strong.</strong>
-        <strong data-ns-test="strong">This is strong.</strong>
+        <p data-ns-test="block-inline-sub">Lorem <sub>10</sub></p>
+        <p>Answer: Inline</p>
+    </div>
+
+	<div class="container">
+        <p data-ns-test="block-inline-sup">Lorem <sup>10</sup></p>
         <p>Answer: Inline</p>
     </div>
 
     <div class="container">
-        <em data-ns-test="em">This is emphasized text.</em>
-        <em data-ns-test="em">This is emphasized text.</em>
+        <input type="text" placeholder="Name" data-ns-test="block-inline-input">
         <p>Answer: Inline</p>
     </div>
 
     <div class="container">
-        <h1 data-ns-test="heading">This is a heading.</h1>
-        <h1 data-ns-test="heading">This is a heading.</h1>
+        <h1 data-ns-test="block-inline-h1">This is a heading.</h1>
         <p>Answer: Block</p>
     </div>
 
